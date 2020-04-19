@@ -1,0 +1,3 @@
+# stekki
+
+Another school project
