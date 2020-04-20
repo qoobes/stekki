@@ -6,7 +6,7 @@
 
 So let's begin!
 
----
+## Part 1 - The Basics
 
 #### Step 1 - getting the right stuff
 
@@ -22,7 +22,6 @@ Then, all you need to do is run this command and you should have everything more
 <img src="./essayPics/S1P1.png" width="500px" style="border-radius: 7px;">
 
 <img src="./essayPics/S1P2.png" width="500px" style="border-radius: 7px;">
-
 
 ---
 
@@ -57,6 +56,7 @@ Since the layout here is a bit inverted, we'll just change that to say `Stekki`,
 
 <img src="./essayPics/S2P2.png" width="800px" style="border-radius: 7px;">
 
+---
 
 #### Step 4 - Changing colors 
 
@@ -79,9 +79,62 @@ You should get something like this!
 
 *Sleek, professional design.*
 
+I chose this specific color due to it being a nice, calming green tone, which represents our country and website quite well.
 
-*Now this is incidentally where we encounter our first **deviation** from the design mockup I made.*
-<br> The problem is that after finishing the design I originally intended for this section I saw that it looked horrible on mobile displays, which is why I will in this case opt not to change the layout of the front page, since this one seems good enough to pass under the **same specifications**. 
+There's one more place where we need to change the color: 
+<br> In `scss/components/_buttons.scss` change the color on the last line from `rgba(254, 209, 55, .5)` to `#abdf7e`
 
+This should give us the exact color scheme we want to have here.
 
+---
+
+#### Step 5 - Menu Items
+
+To finish off this section of the essay, lets go ahead and change the menu buttons to say what we want them to say.
+
+Now there are many parts to this page, and we're going to make use of every single one.
+
+So, around `line 32`, you'll see a list of the items looking something like this:
+
+<img src="./essayPics/S5P1.png" width="500px" style="border-radius: 7px;">
+
+Now you can just change the **white values** to whatever you want and the change should reflect on the site.
+
+Going off of the design specifications, we'll do the following.
+
+`Bosnia | Stekki | History | Coolness | Contact`
+
+And after making the change you should get something along the lines of:
+
+<img src="./essayPics/S5P2.png" width="500px" style="border-radius: 7px;">
+
+##### *Deviation 1
+
+This is the first time during this project that we deviate a little from our original design.
+<br> Even though I thought it was okay, after making it I saw how bad it looked on mobile devices, so we're gonna go with the one that's already here.
+
+## Part 2 - Organization
+
+#### This section focuses on large website changes
+
+We'll mostly just be moving the actual files around and getting everything organized and set up, removing junk that we don't need and such, so you could consider this a little boring- I certainly do, but it is essential.
+
+---
+
+#### Step 1 - The physical files 
+
+For this part, I'll be using windows explorer and vim, again, literally anything works.
+
+Now open your working directory, the place with all the files. If you're in a terminal on windows (even using WSL), just doing `explorer.exe .` will work.
+
+The first- and most essential step, is deleting anything ending in `.php`, I will not allow php on the website.
+<br> In all seriousness, aside from being a bad language, we will not support php since the free hosting provider we'll be using won't support it. I may just do mailing in javascript later on, but we'll see.
+
+So, I want you to delete the `mail` folder, since we won't be needing it.
+
+// TREMOVE: removed most of the section cause it seemed pointless
+
+#### Step 2 - Erasure
+
+Heading over to your `index.html` file, it's time to get rid of some of it, since it's code we don't need at the moment.
 
