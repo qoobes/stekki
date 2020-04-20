@@ -138,3 +138,42 @@ So, I want you to delete the `mail` folder, since we won't be needing it.
 
 Heading over to your `index.html` file, it's time to get rid of some of it, since it's code we don't need at the moment.
 
+Inside the file, find this snippet of code:
+
+```html
+<section class="page-section" id="services">
+  <div class="container">
+```
+
+Now delete everything between it and:
+
+```html
+  </div>
+</section>
+```
+
+You should be left with this:
+
+```html
+<section class="page-section" id="services">
+  <div class="container">
+
+  </div>
+</section>
+```
+
+Now do the same with the `teams (Coolness)` section. The end result should be: 
+
+```html
+<section class="bg-light page-section" id="teams">
+  <div class="container">
+
+  </div>
+</section>
+
+```
+
+Saving and refreshing the page should now reveal two empty sections where the old ones used to be, which means we're well prepared for the next part of this `essay`.
+
+
+
