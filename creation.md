@@ -339,3 +339,16 @@ There is absolutely nothing we need to change here, so just continue along.
 ## Part 4 - Content
 
 Now, this is where we add actual content to the site, so let's get started right away.
+
+So replace the picture you marked as `nice.jpg` with another one you'd like to use, in my case it's <a href="http://bosnae.info/wp-content/uploads/2017/01/radimlja_visitmycountry.jpg" target="_blank">this</a> one.
+
+After that, we need to change the text, the header stays, so I'll just change my `<p>` element to something a little bit more fitting. This is what I came up with, but you're free to use your own text.
+
+```plaintext
+Stecci are- and have been, the staple of the great country of Bosnia for almost actual millenia, makking them verified veterans when it comes to touristic attractions.
+But- The stecci are the least of your concerns, it's the actual experience of visiting there that's really breathtaking, as you'll see in the descriptions below.
+
+Check out the rest of the site to learn more.
+```
+
+So, adding that to the site you should get something similar to this:
