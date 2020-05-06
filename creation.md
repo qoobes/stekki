@@ -340,15 +340,85 @@ There is absolutely nothing we need to change here, so just continue along.
 
 Now, this is where we add actual content to the site, so let's get started right away.
 
+#### The Stekki Section
+
 So replace the picture you marked as `nice.jpg` with another one you'd like to use, in my case it's <a href="http://bosnae.info/wp-content/uploads/2017/01/radimlja_visitmycountry.jpg" target="_blank">this</a> one.
 
 After that, we need to change the text, the header stays, so I'll just change my `<p>` element to something a little bit more fitting. This is what I came up with, but you're free to use your own text.
 
 ```plaintext
 Stecci are- and have been, the staple of the great country of Bosnia for almost actual millenia, makking them verified veterans when it comes to touristic attractions.
-But- The stecci are the least of your concerns, it's the actual experience of visiting there that's really breathtaking, as you'll see in the descriptions below.
+But- In bosnia, stecci are the least of your concerns, it's the actual experience of visiting there that's really breathtaking, as you'll see in the descriptions below.
 
 Check out the rest of the site to learn more.
 ```
 
 So, adding that to the site you should get something similar to this:
+
+<img src="./essayPics/S8P1.png" width="500px" style="border-radius: 7px;">
+
+*\*Note: another deviation from the design, I included two pictures since the text was taller than I anticipated*
+
+Still not even remotely pretty, though if you're here for that, skip over to the **styling section**.
+
+#### The Beauty Section
+
+So, to begin with, I'll replace the text saying `Portfolio` with `The Beauty`, and the piece of text below it with
+` What's so beautiful about Bosnia? See for yourself.`
+
+Next up, we have to fix those images, I have chosen these three to replace them:
+
+<a href="https://bazerdzan.ba/blogs/blog/stecak-the-true-bosnian-treasure" target="_blank">Pretty</a>,
+<a href="https://www.pinterest.com/pin/431360470549566150/" target="_blank">Prettier</a> and
+<a href="https://www.pinterest.com/pin/230950287111148367/" target="_blank">The Prettiest</a>
+
+Now I'll just plop the images in there and change the subtexts:
+
+<img src="./essayPics/S8P2.png" width="500px" style="border-radius: 7px;">
+
+It's nice, though not equal. That's something we'll fix in the styling section.
+
+Let's make the modals prettier too:
+
+This is an example of what I did to the first modal here, it's not complicated, just play around with it and you'll get something nice.
+
+Again, you can view the full code on <a href="https://github.com/theqoobee/stekki" target="_blank">github</a>.
+
+```html
+<!-- Modal 1 -->
+<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+          <div class="rl"></div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div class="modal-body">
+              <!-- Project Details Go Here -->
+              <h2 class="text-uppercase">Brisk</h2>
+              <p class="item-intro text-muted">Pure, brisk beauty.</p>
+              <img class="img-fluid d-block mx-auto" src="img/Pretty.jpg" alt="Beautiful wild brisk bosnia stecci">
+              <p>The pure brisk beauty of stecci is not described with words, but with pictures. This one in particular was taken in the <strong>Boljuni Necropolis</strong>, one of the places you should surely visit.</p>
+              <button class="btn btn-primary" data-dismiss="modal" type="button">
+                <i class="fas fa-times"></i>
+                Close Image</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+This is what it looks like:
+
+<img src="./essayPics/S8P3.png" width="500px" style="border-radius: 7px;">
+
+Actually kinda okay, nice
+
+Now that we've got that done, it's time to get on with doing
