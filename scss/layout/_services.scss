@@ -3,3 +3,11 @@
   margin: 15px 0;
   text-transform: none;
 }
+
+#services {
+  img {
+    border: 2px solid $gray-600;
+    border-radius: 5px;
+    margin: 0.3rem;
+  }
+}
