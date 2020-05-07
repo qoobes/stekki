@@ -227,6 +227,12 @@ header.masthead .intro-text .intro-heading {
   text-transform: none;
 }
 
+#services img {
+  border: 2px solid #868e96;
+  border-radius: 5px;
+  margin: 0.3rem;
+}
+
 #portfolio .portfolio-item {
   right: 0;
   margin: 0 0 15px;
@@ -563,25 +569,10 @@ header.masthead .intro-text .intro-heading {
   }
 }
 
-.team-member {
-  margin-bottom: 50px;
-  text-align: center;
-}
-
-.team-member img {
-  width: 225px;
-  height: 225px;
-  border: 7px solid rgba(0, 0, 0, 0.1);
-}
-
-.team-member h4 {
-  margin-top: 25px;
-  margin-bottom: 0;
-  text-transform: none;
-}
-
-.team-member p {
-  margin-top: 0;
+#team img {
+  border: 2px solid #868e96;
+  border-radius: 5px;
+  margin: 0.3rem;
 }
 
 section#contact {
