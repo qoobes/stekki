@@ -344,6 +344,10 @@ Now, this is where we add actual content to the site, so let's get started right
 
 So replace the picture you marked as `nice.jpg` with another one you'd like to use, in my case it's <a href="http://bosnae.info/wp-content/uploads/2017/01/radimlja_visitmycountry.jpg" target="_blank">this</a> one.
 
+<p style="color: red;"><strong>Now I've decided to deviate from my original design and add another image below the first one, this is done to accommodate the empty space on smaller displays due to the aspect ratio of the image itself**</strong> </p>
+
+The difference is that the second image will be "optional", by adding onto it `class="d-lg-none"`, you tell bootstrap not to display it on larger displays.
+
 After that, we need to change the text, the header stays, so I'll just change my `<p>` element to something a little bit more fitting. This is what I came up with, but you're free to use your own text.
 
 ```plaintext
@@ -357,7 +361,7 @@ So, adding that to the site you should get something similar to this:
 
 <img src="./essayPics/S8P1.png" width="500px" style="border-radius: 7px;">
 
-*\*Note: another deviation from the design, I included two pictures since the text was taller than I anticipated*
+*\*Note: again, another deviation from the design, I included two pictures since the text was taller than I anticipated*
 
 Still not even remotely pretty, though if you're here for that, skip over to the **styling section**.
 
@@ -397,10 +401,7 @@ Again, you can view the full code on <a href="https://github.com/theqoobee/stekk
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <div class="modal-body">
-              <!-- Project Details Go Here -->
-              <h2 class="text-uppercase">Brisk</h2>
-              <p class="item-intro text-muted">Pure, brisk beauty.</p>
+            <div class="modal-body"> <!-- Project Details Go Here --> <h2 class="text-uppercase">Brisk</h2> <p class="item-intro text-muted">Pure, brisk beauty.</p>
               <img class="img-fluid d-block mx-auto" src="img/Pretty.jpg" alt="Beautiful wild brisk bosnia stecci">
               <p>The pure brisk beauty of stecci is not described with words, but with pictures. This one in particular was taken in the <strong>Boljuni Necropolis</strong>, one of the places you should surely visit.</p>
               <button class="btn btn-primary" data-dismiss="modal" type="button">
@@ -419,6 +420,143 @@ This is what it looks like:
 
 <img src="./essayPics/S8P3.png" width="500px" style="border-radius: 7px;">
 
-Actually kinda okay, nice
+Actually kinda **okay**.
 
-Now that we've got that done, it's time to get on with doing
+Now that we've got that done, it's time to get on with doing the tree.
+
+I'll start off by changing the title itself from `about` to `The History`, and the subtext to `The beautiful history of Bosnia and Stecci`
+
+Now the following information comes from
+<a href="https://en.wikipedia.org/wiki/Ste%C4%87ak" target="_blank">Wikipedia</a>,
+<a href="https://web.archive.org/web/20160308220543/http://whc.unesco.org/en/tentativelists/5607" target="_blank">here</a> and <a href="https://www.itinari.com/unravelling-the-secrets-of-stecci-bosnian-medieval-tombstones-l14a" target="_blank">here</a>.
+
+MLA Citations:
+
+```
+"Stećak", 15th July 2018,
+  <https://en.wikipedia.org/wiki/Ste%C4%87ak> (28th April 2020)
+"Stećaks",
+  <http://whc.unesco.org/en/tentativelists/5607> (28th April 2020)
+"Unravelling the secrets of stecci", 14th February 2020,
+  <https://www.itinari.com/unravelling-the-secrets-of-stecci-bosnian-medieval-tombstones-l14a> (28th April 2020)
+```
+
+Note that the last article is one that I used in my research phase.
+
+So just replace the text and the pictures there with your own stuff, here's an example of the first one I did.
+
+Once again, the full code can be found <a href="https://github.com/theqoobee/stekki" target="_blank">here</a>.
+
+```html
+<div class="timeline-image">
+  <img class="rounded-circle img-fluid" src="img/history/first.jpg" alt="">
+</div>
+<div class="timeline-panel">
+  <div class="timeline-heading">
+    <h4>12th Century</h4>
+    <h4 class="subheading">The first Stecci</h4>
+  </div>
+  <div class="timeline-body">
+    <p class="text-muted">What we think to be the first stecc ever created is Grdeša, found in župan of Trebinje. Most likely built by the first inhabitants of the Bosnian heretical church, aside from being very historically important this stecc is a beautiful site to see.</p>
+  </div>
+</div>
+```
+
+Aaaand here's what it looks like:
+
+<img src="./essayPics/S9P1.png" width="500px" style="border-radius: 7px;">
+
+#### The coolness section
+
+Since this one is the exact same as the first section, we'll do more or less the same thing. I've written some text that shines a beautiful light on stecci and bosnia as a whole, and put two basic pictures in there as well. Here's what it looks like for me.
+
+I'll just add the image priority to the second image, i.e the `class="d-lg-none"` will be on the **first** element.
+
+This is the code:
+
+```html
+<div class="row">
+  <div style="background-color: lightgrey; padding: 10px;" class="col-md-6 col-sm-12">
+    <h2>Stecci <i>are</i> cool.</h2>
+    <br>
+    <p class="text">As one of the greatest artifacts my country has to offer, containing more history inside each and every one of them than more or less any history book out there, I really do thing <strong>stecci are worth giving a visit.</strong></p>
+
+    <p class="text">It's one hell of an experience in a brand new country, and everyone should visit at least once in their lifetime, since the culture here is unlike <strong>anything you'll ever see</strong>.</p>
+  </div>
+  <!-- The picture column -->
+  <div style="background-color: lightblue; padding: 10px;" class="col-md-6 col-sm-12">
+    <img src="img/cool/1.jpg" alt="An iamge" style="d-lg-none" width="100%">
+    <img src="img/cool/2.jpg" alt="An iamge" width="100%">
+  </div>
+</div>
+```
+
+And this is how it looks (for now):
+
+<img src="./essayPics/S9P2.png" width="500px" style="border-radius: 7px;">
+
+#### The contact section
+
+This time around, there's actually something to do here- change the text, and that we will.
+
+I'll just change it up to be like the design.
+
+Here it is:
+
+<img src="./essayPics/S9P3.png" width="500px" style="border-radius: 7px;">
+
+#### The copyright section
+
+Let's just change the text in here to say something a little different
+
+<img src="./essayPics/S9P4.png" width="200px" style="border-radius: 7px;">
+
+Done. Nice 👌
+
+Welp that's the end of the content part, time for styling
+
+## Part 5 - The Style
+
+Half of this looks pretty ugly, so it's time to get our hands dirty with some css.
+
+#### The Stecci and Coolness Section
+
+This is the one we have to do the most work in, though this time instead of going to the index.html file we'll head over to our css.
+
+First of all remove the inline css from your `stecci` and `Coolness` sections in `index.html`. Inline css are the `style=""` parts.
+
+This alone makes it look a surprising amount better.
+
+<img src="./essayPics/S10P1.png" width="500px" style="border-radius: 7px;">
+
+Next, we'll be editing `sass`, the `.scss` files, as we said earlier, sass is a superset of css, meaning that whatever you're used to doing in css you can do here too, so don't worry about that.
+
+All we'll really do is add borders and margins to the images in these two sections.
+
+To begin with, the stecci section, head over to `[project]/scss/layout/_services.scss`, this is the place where we can edit things that affect theses sections.
+
+Now just below the already present css, you should add the following code:
+
+```css
+#services {
+  img {
+    border: 2px solid $gray-600;
+    border-radius: 5px;
+    margin: 0.3rem;
+  }
+}
+```
+
+This will make every image inside that section run away from every other a little bit, while also giving them a nice gray border.
+
+Let's add the same code in the `_team.scss` file, though this time we'll remove the code that's already there since we don't need it anymore.
+
+```css
+#team {
+  img {
+    border: 2px solid $gray-600;
+    border-radius: 5px;
+    margin: 0.3rem;
+  }
+}
+```
