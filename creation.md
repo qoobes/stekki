@@ -591,10 +591,54 @@ So just add this piece of code inside the `.portfolio-item` class.
 }
 ```
 
-And just one addition, we'll make all the images slightly paler so they blend better iwth the background. We'll just do it in the themes file, so add this at the very top:
+And just one addition, we'll make all the images slightly paler so they blend better with the background. We'll just do it in the themes file, so add this at the very top:
 
 ```css
 img {
   filter: opacity(90%);
 }
 ```
+
+Aand that's more or less it. There's only one thing left to do, and I felt hat this would fit well at the very end for the feel of it: **changing the main background**
+
+## The finishing touch
+
+So I lied- there's more than just one thing left to do, but for now, we need to find a fitting, nice, and high resolution image to show off as the star of the entire website.
+
+And in my honest opinion, **it shouldn't be a stecak.**
+
+Why?
+
+Because that doesn't do the website justice, that's not all it's about. It's supposed to show **Bosnian** beauty, that we're worth more than it seems, and putting a stecak there will just say "Hey we got this one good thing going".
+
+So instead, I chose this picture- it checks all the boxes, inspiring, beautiful, nature, and most of all Bosnian.
+
+<img src="./essayPics/img.jpg" width="500px" style="border-radius: 7px;">
+
+So this is the website:
+
+<img src="./essayPics/almost_final.png" width="500px" style="border-radius: 2px;">
+Now remember moments ago how I lied about this being the only thing left, well let's get back to that. The one last thing I want to do here, is to darken this picture a bit, since it pops way too much and it's hard to see the letters over.
+
+This can be easily done by adding `filter: brightness(90%);` in a css file defining the image, so let's do that as the **true last step**.
+
+### The true last step
+
+Open your `scss` folder, and head over to the `components` section, the `masthead` file.
+
+And just add the line I mentioned to `header.masthead`.
+
+```css
+header.masthead {
+  filter: brightness(90%);
+  ...
+}
+```
+
+This will darken it by just a little bit, but that little bit makes all the difference.
+
+# done 👏
+
+So now I'm quickly going to deploy this to `netlify`, a mostly free service for hosting static websites like this one,
+
+All the code can be seen <a href="https://github.com/theqoobee/stekki" target="_blank">here</a>, and <a href="https://stekki.netlify.com" target="_blank">this</a> is a link to the website.
