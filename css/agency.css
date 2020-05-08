@@ -171,6 +171,8 @@ img::-moz-selection {
 }
 
 header.masthead {
+  -webkit-filter: brightness(90%);
+  filter: brightness(90%);
   text-align: center;
   color: white;
   background-image: url("../img/header-bg.jpg");
