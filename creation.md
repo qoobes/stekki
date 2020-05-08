@@ -560,3 +560,41 @@ Let's add the same code in the `_team.scss` file, though this time we'll remove 
   }
 }
 ```
+
+
+After that's done, you should have two decently looking sections done, time to move on.
+
+#### The Beauty Section
+
+All we really need here is to make all the cards equal, since this is what they currently look like for me.
+
+<img src="./essayPics/S10P2.png" width="500px" style="border-radius: 7px;">
+
+The problem here is the aspect ratio of the pictures is not the same, so we'll fix that.
+
+This is done by adding `media queries` into the css, they basically set the element's properties based on it's dimensions. Truth be told, I hate more than anything working with them, but I can't deny they are useful.
+
+So just add this piece of code inside the `.portfolio-item` class.
+
+```css
+@media (min-height: 981px) {
+  img {
+    width: 100%;
+    height: 230px;
+  }
+}
+@media (max-height: 980px) {
+  img {
+    width: 100%;
+    height: 210px;
+  }
+}
+```
+
+And just one addition, we'll make all the images slightly paler so they blend better iwth the background. We'll just do it in the themes file, so add this at the very top:
+
+```css
+img {
+  filter: opacity(90%);
+}
+```
