@@ -233,9 +233,28 @@ header.masthead .intro-text .intro-heading {
   margin: 0.3rem;
 }
 
+img {
+  -webkit-filter: opacity(90%);
+  filter: opacity(90%);
+}
+
 #portfolio .portfolio-item {
   right: 0;
   margin: 0 0 15px;
+}
+
+@media (min-height: 769px) {
+  #portfolio .portfolio-item img {
+    width: 100%;
+    height: 210px;
+  }
+}
+
+@media (max-height: 768px) {
+  #portfolio .portfolio-item img {
+    width: 100%;
+    height: 190px;
+  }
 }
 
 #portfolio .portfolio-item .portfolio-link {

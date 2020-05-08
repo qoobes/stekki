@@ -1,6 +1,22 @@
 // Styling for the portfolio section
+img {
+  filter: opacity(90%);
+}
+
 #portfolio {
   .portfolio-item {
+    @media(min-height:769px) {
+      img {
+        width: 100%;
+        height: 210px;
+      }
+    }
+    @media(max-height:768px) {
+      img {
+        width: 100%;
+        height: 190px;
+      }
+    }
     right: 0;
     margin: 0 0 15px;
     .portfolio-link {
